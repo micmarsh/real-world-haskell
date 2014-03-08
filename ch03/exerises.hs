@@ -1,4 +1,5 @@
 
+count :: [a] -> Int
 count list = count' 0 list 
     where count' n [] = n
           count' n (h:tail) = count' (n + 1) tail
